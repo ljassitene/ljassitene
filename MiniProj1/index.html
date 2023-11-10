@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Horizontal</title>
+
+    <style>
+        #menu {
+            background-color: #90EE90;
+        }
+        
+        #menu ul {
+            max-width: 800px;
+            list-style: none;
+            padding: 0;
+        }
+        
+        #menu ul li {
+            display: inline;
+        }
+        
+        #menu ul li a {
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: background .4s;
+        }
+        
+        #menu ul li a:hover {
+            background-color: rgb(24, 139, 233);
+        }
+        
+        #menu ul li:hover a {
+            background-color: rgb(24, 139, 233);
+        }
+        
+        .li-footer{
+            display: inline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #90EE90;
+            color: white;
+        }
+        
+        #orn ul li a {
+            display: inline;
+            list-style: none;
+            text-decoration: none;
+            float: left;
+        }
+
+        #orn {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+        .li-footer-img{
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+
+            <li><a href="#" onclick="sou()">Quem Sou Eu?</a></li>
+
+            <li><a href="#" onclick="faco()">O que faço?</a></li>
+
+            <li><a href="#" onclick="hob()">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <footer id="orn">
+        <div class="row">
+        <ul>
+            <li class="li-footer">
+                <a href="#"> <img src="images/facebook.png" class="li-footer-img" alt="" width="50" height="60"></a>
+
+            </li>
+            <li class="li-footer">
+                <a href="#"><img src=" images/google+.png " class="li-footer-img" alt=" " width="50 " height="60 "></a>
+            </li>
+            <li class="li-footer">
+                <a href="#"><img src="images/twitter.png " class="li-footer-img" alt=" " width="50 " height="60 "></a>
+            </li>
+            <li class="li-footer">
+                <a href="https://www.linkedin.com/in/ornelio-jotamo-850556100/"> <img src="images/Linkedin.png " class="li-footer-img" alt="Girl in a jacket " width="50 " height="60 "></a>
+            </li>
+        </ul>
+    </div>
+    </footer>
+
+</body>
+<script>
+    function sou() {
+        window.alert("Eu Leonel Jassitene, de Moçambique, 34 anos, licenciado em Tecnológia de informação. ");
+    }
+
+    function faco() {
+        window.alert("Tenho 13 anos de experiência na área de TI,  actuo  como Docente Universitário, desenvolvedor, Network & Sys Admin ");
+    }
+	    function hob() {
+        window.alert("Jogar futebol nos tempos livres, ler e mais. ");
+    }
+
+</script>
+
+</html>
